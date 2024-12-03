@@ -3,3 +3,48 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+html {
+    font-size: 16px;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+}
+
+/* DESKTOP VERSION */
+
+/* MAIN */
+main {
+    height: calc(100vh - 150px);
+    overflow: auto;
+    display: flex;
+    /* DEBUG */
+    background-color: #06360f;
+}
+
+/* LEFT-MENU */
+#side-page {
+    height: 100%;
+    width: 300px;
+    background-color: #000000;
+}
+
+/* RIGHT MENU */
+#right-page {
+    height: 100%;
+    width: calc(100% - 300px);
+    background-color: #141922;
+}
+
+#top-rightbar {
+    height: 150px;
+    opacity: 0.4;
+    background-color: #080b12;
+}
+
+/* FOOTER */
+#player {
+    height: 150px;
+    background-color: #282828;
+}
