@@ -39,6 +39,10 @@ a {
     max-width: 100%;
 }
 
+.round {
+    border-radius: 999px;
+}
+
 /* DESKTOP VERSION */
 
 /* MAIN */
