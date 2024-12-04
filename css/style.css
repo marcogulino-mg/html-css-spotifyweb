@@ -66,7 +66,6 @@ main {
     height: 100%;
     width: 250px;
     padding: 10px 20px;
-    z-index: 999;
     background-color: #000000;
 }
 
@@ -107,12 +106,12 @@ main {
 
 #top-rightbar {
     height: 115px;
-    width: 100%;
+    width: calc(100% - 250px);
     opacity: 0.4;
     background-color: #080b12;
     position: fixed;
     top: 0;
-    left: 0;
+    right: 0;
     z-index: 2;
     display: flex;
     justify-content: flex-end;
@@ -177,6 +176,7 @@ main {
     display: flex;
     align-items: center;
     gap: 20px;
+    width: calc(100% / 3);
 }
 
 #song-info img {
@@ -186,7 +186,7 @@ main {
 }
 
 #main-controls {
-    width: 30%;
+    width: calc(100% / 3);
 }
 
 #main-controls > div:last-child {
@@ -210,15 +210,19 @@ main {
 }
 
 #side-controls {
-    width: 20%;
+    width: calc(100% / 3);
     display: flex;
     align-items: center;
     justify-content: flex-end;
     gap: 10px;
 }
 
-/* TABLET VERSION */
-
+/* TABLET VERSION */ 
+/* 1440
+    878
+    639
+    552 
+    zindex sopra footer nav:overflow y auto */ 
 
 /* MOBILE VERSION */
 @media screen and (max-width: 552px) {
@@ -230,14 +234,14 @@ main {
 /* MAIN */
 /* LEFT MENU */
 #left-page {
-    width: 50px;
+    width: 60px;
     padding: 0;
 }
 
 
 /* RIGHT MENU */
-#right-page {
-    width: calc(100% - 50px);
+#right-page, #top-rightbar {
+    width: calc(100% - 60px);
 }
 
 #main-topbar > ul {
