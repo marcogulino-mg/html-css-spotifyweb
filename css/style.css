@@ -64,8 +64,9 @@ main {
     height: 13%;
 }
 
-#img-logo > img {
+#img-logo img {
     max-width: 100%;
+    height: 100%;
 }
 
 /* SIDE-MENU */
@@ -166,8 +167,34 @@ main {
     gap: 20px;
 }
 
+#song-info img {
+    height: auto;
+    width: 100px;
+    display: block;
+}
+
+#main-controls {
+    width: 30%;
+}
+
+#main-controls > div:last-child {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
 #main-controls {
     text-align: center;
+}
+
+.timeline {
+    border: solid 1px #ffffff;
+    border-radius: 999px;
+    background-color: #777777;
+    opacity: 0.3;
+    width: 70%;
+    height: 8px;
 }
 
 #side-controls {
@@ -179,7 +206,7 @@ main {
 
 
 /* MOBILE VERSION */
-@media screen and (max-width: 430px) {
+@media screen and (max-width: 552px) {
 
 .hidden-text {
     display: none;
@@ -236,7 +263,7 @@ footer > div {
 }
 
 #song-info > div:first-child {
-    width: 70px;
+    width: 80px;
 }
 
 #song-info > div:last-child {
