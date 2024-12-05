@@ -20,14 +20,15 @@ body {
 
 .brd-bottom-green {
   border-bottom: solid 4px #bfff30;
-} 
+}
 
 .brd-left-green {
-    border-left: solid 4px #bfff30;
+  border-left: solid 4px #bfff30;
+  padding-left: 15px;
 }
 
 .txtwhite {
-    color: #ffffff;
+  color: #ffffff;
 }
 
 .txtgrey {
@@ -132,11 +133,11 @@ main {
 }
 
 #left-page a:hover {
-    color: #ffffff;
+  color: #ffffff;
 }
 
 #bottom-sidepage a:hover {
-    color: #ffffff;
+  color: #ffffff;
 }
 
 #side-menu img {
@@ -160,12 +161,12 @@ main {
 }
 
 #playlist-container a {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .fa-square-plus {
-    padding-right: 10px;
+  padding-right: 10px;
 }
 
 /* BOTTOM SIDEPAGE */
@@ -217,15 +218,13 @@ main {
 }
 
 #top-rightbar > a:hover {
-    transform: scale(1.2);
+  transform: scale(1.2);
 }
 
 #main-rightpage {
   height: 100%;
   overflow: auto;
   padding-top: 115px;
-  /* DEBUG */
-  /* background-color: #0056f7; */
 }
 
 #main-topbar > ul {
@@ -240,7 +239,7 @@ main {
 }
 
 #main-topbar a:hover {
-    color: white;
+  color: white;
 }
 
 .row {
@@ -257,12 +256,33 @@ main {
   max-width: 300px;
 }
 
-/* .mockup-img {
-    /* DEBUG */
-/* background-color: #032d8f;
-    width: 200px;
-    height: 200px; 
-} */
+.mockup-img {
+  position: relative;
+}
+
+.mockup-img > div {
+  height: 100%;
+  width: 100%;
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.mockup-img i {
+  font-size: 50px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.mockup-img:hover > div {
+  cursor: pointer;
+  display: block;
+}
 
 /* FOOTER */
 #player {
@@ -308,14 +328,14 @@ main {
 }
 
 .timeline.song > div {
-    background-color: #ffffff;
-    height: 100%;
-    width: 30%;
-    border-radius: 999px;
+  background-color: #ffffff;
+  height: 100%;
+  width: 30%;
+  border-radius: 999px;
 }
 
 .timeline.song > div:hover {
-    background-color: #bbf45a;
+  background-color: #bbf45a;
 }
 
 #side-controls {
@@ -348,14 +368,14 @@ main {
 }
 
 .timeline.volume > div {
-    background-color: #ffffff;
-    height: 100%;
-    width: 15%;
-    border-radius: 999px;
+  background-color: #ffffff;
+  height: 100%;
+  width: 15%;
+  border-radius: 999px;
 }
 
 .timeline.volume > div:hover {
-    background-color: #bbf45a;
+  background-color: #bbf45a;
 }
 
 /* TABLET VERSION */
