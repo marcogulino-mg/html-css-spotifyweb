@@ -142,8 +142,13 @@ main {
 }
 
 #bottom-sidepage img{
-    max-width: 20px;
-    vertical-align: middle;
+    max-width: 30px;
+}
+
+#bottom-sidepage a {
+    display: flex;
+    align-items: center;
+    gap: 7px;
 }
 
 /* RIGHT MENU */
@@ -303,7 +308,7 @@ main {
     }    
 }
 
-@media screen and (max-width: 639px) {
+@media screen and (max-width: 767px) {
     /* MAIN */
     .catalog > li {
         width: 140px;
@@ -311,7 +316,7 @@ main {
 }
 
 /* MOBILE VERSION */
-@media screen and (max-width: 552px) {
+@media screen and (max-width: 620px) {
 
 .hidden-text {
     display: none;
@@ -344,7 +349,7 @@ main {
 }
 
 #bottom-sidepage a {
-    margin-left: 16px;
+    justify-content: center;
 }
 
 hr {
@@ -419,4 +424,17 @@ h4 {
     width: 100%;
 }
 
+}
+
+@media screen and (max-width: 490px) {
+
+/* FOOTER */
+.author-songname {
+    margin: 0 10px;
+}
+
+#song-info > img {
+    display: none;
+}
+    
 }
