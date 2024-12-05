@@ -306,6 +306,17 @@ main {
   margin: 0 10px;
 }
 
+.fa-folder,
+.fa-heart {
+  color: #777777;
+  padding-left: 20px;
+}
+
+.fa-folder:hover,
+.fa-heart:hover {
+  color: #ffffff;
+}
+
 #main-controls {
   height: 100%;
   width: 50%;
@@ -316,8 +327,12 @@ main {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 10px;
+  gap: 15px;
   font-size: 1.5rem;
+}
+
+.fa-circle-play:hover {
+  transform: scale(1.5);
 }
 
 #main-controls > div:last-child {
@@ -405,11 +420,6 @@ main {
 }
 
 /* TABLET VERSION */
-/* 1440
-    878
-    639
-    552 
-    zindex sopra footer nav:overflow y auto */
 
 @media screen and (max-width: 878px) {
   .catalog > li {
@@ -432,6 +442,15 @@ main {
   /* MAIN */
   .catalog > li {
     width: 140px;
+  }
+
+  /* FOOTER */
+  #song-info img {
+    width: 50px;
+  }
+
+  .author-songname {
+    font-size: 12px;
   }
 }
 
@@ -528,10 +547,6 @@ main {
     font-size: 0.8rem;
   }
 
-  #song-info > div:last-child {
-    padding-left: 15px;
-  }
-
   .flex-column {
     display: flex;
     flex-direction: column;
@@ -539,6 +554,11 @@ main {
 
   .flex-column > span {
     font-size: 0.7rem;
+  }
+
+  .fa-folder,
+  .fa-heart {
+    padding-left: 6px;
   }
 
   #main-controls > div:first-child {
