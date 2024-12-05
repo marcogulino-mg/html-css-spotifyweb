@@ -11,41 +11,52 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- CSS FILES -->
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
     <!-- MAIN -->
     <main>
-      <!-- LEFT PART -->
-      <nav id="left-page">
-        <div id="img-logo" class="debug">
-            <a href="#"><img src="./img/logo.svg" alt="Logo"></a>
-        </div>
-        <div id="side-menu" class="debug">
-            <ul>
-                <li><a href="#"><img src="./img/home.svg" alt="homepage button"> <span class="hidden-text">Home</span></a></li>
-                <li><a href="#"><img src="./img/search.svg" alt="search button"> <span class="hidden-text">Cerca</span></a></li>
-                <li><a href="#"><img src="./img/libreria.svg" alt="library button"> <span class="hidden-text">La tua libreria</span></a></li>
-            </ul>
-        </div>
-        <div id="playlist-container" class="debug">
-            <h3><span class="hidden-text">LOREM IPSUM</span></h3>
-            <ul>
-                <li><span class="hidden-text">Playlist</span></li>
-                <li><span class="hidden-text">Playlist</span></li>
-                <li><span class="hidden-text">Playlist</span></li>
-                <li><span class="hidden-text">Playlist</span></li>
-                <li><span class="hidden-text">Playlist</span></li>
-                <li><span class="hidden-text">Playlist</span></li>
-                <li><span class="hidden-text">Playlist</span></li>
-                <li><span class="hidden-text">Playlist</span></li>
-            </ul>
+      <!-- LEFT PART  overflow hidden-->
+      <nav id="left-page"> 
+        <div id="top-left-container">
+            <div id="img-logo" class="debug">
+                <a href="#"><img src="./img/logo.svg" alt="Logo" class="big-logo"></a>
+                <a href="#"><img src="./img/logo-small.svg" alt="Logo" class="small-logo"></a>
+            </div>
+            <div id="side-menu" class="debug">
+                <ul>
+                    <li><a href="#"><img src="./img/home.svg" alt="homepage button"> <span class="hidden-text">Home</span></a></li>
+                    <li><a href="#"><img src="./img/search.svg" alt="search button"> <span class="hidden-text">Cerca</span></a></li>
+                    <li><a href="#"><img src="./img/libreria.svg" alt="library button"> <span class="hidden-text">La tua libreria</span></a></li>
+                </ul>
+            </div>
+            <div id="playlist-container" class="debug">
+                <h3 class="hidden-text">PLAYLIST</h3>
+                <ul>
+                    <li>
+                        <i class="fa-solid fa-square-plus hidden-text"></i>
+                        <a href="#"><span class="hidden-text">Crea Playlist</span></a>
+                    </li>
+                    <li><span class="hidden-text">Nome Playlist</span></li>
+                    <li><span class="hidden-text">Nome Playlist</span></li>
+                    <li><span class="hidden-text">Nome Playlist</span></li>
+                    <li><span class="hidden-text">Nome Playlist</span></li>
+                    <li><span class="hidden-text">Nome Playlist</span></li>
+                    <li><span class="hidden-text">Nome Playlist</span></li>
+                    <li><span class="hidden-text">Nome Playlist</span></li>
+                </ul>
+            </div>
         </div>
         <div id="bottom-sidepage" class="debug">
-            <div>1 <span class="hidden-text">Lorem ipsum</span></div>
+            <div>
+                <a href="#"><img src="./img/download.svg" alt="profile icon"></a>
+                <a href="#"><span class="hidden-text txtgrey">Installa app</span></a>
+            </div>
             <hr>
-            <h3>2 <span class="hidden-text">Lorem ipsum</span></h3>
+            <h3>2 <span class="hidden-text">John Doe</span></h3>
         </div>
       </nav>
 
@@ -137,24 +148,36 @@
         <div id="song-info">
             <img src="./img/stranger.jpeg" alt="" class="cover">
             <div>
-                <h4>Lorem</h4>
+                <h4>Sinister</h4>
                 <div class="flex-column txtgrey">
-                    <span>Lorem</span>
-                    <span>Ipsum</span>
+                    <span>Brano</span>
+                    <span>nome</span>
                 </div>
             </div>
             <div class="flex-column">
-                <span>1</span> 
-                <span>2</span>
+                <span><i class="fa-regular fa-heart"></i></span> 
+                <span><i class="fa-regular fa-folder"></i></span>
             </div>
         </div>
         <div id="main-controls">
-            <div>1 2 3 4 5</div>
-            <div>0:25<div class="timeline"></div>4:35</div>
+            <div>
+                <i class="fa-solid fa-shuffle"></i>
+                <i class="fa-solid fa-backward-step"></i>
+                <i class="fa-regular fa-circle-play"></i>
+                <i class="fa-solid fa-forward-step"></i>
+                <i class="fa-solid fa-arrow-rotate-right"></i>
+            </div>
+            <div>0:25<div class="timeline song"></div>4:35</div>
         </div>
         <div id="side-controls">
-            <div>1 2 3</div>
-            <div class="timeline"></div>
+            <div>
+                <i class="fa-solid fa-list"></i>
+                <i class="fa-solid fa-display"></i>
+            </div>
+            <div>
+                <i class="fa-solid fa-volume-high"></i>
+                <div class="timeline volume"></div>
+            </div>
         </div>
     </footer>
   </body>
