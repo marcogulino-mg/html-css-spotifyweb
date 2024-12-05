@@ -12,7 +12,13 @@
       rel="stylesheet"
     />
     <!-- FONT AWESOME -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+      integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <!-- CSS FILES -->
     <link rel="stylesheet" href="./css/style.css" />
   </head>
@@ -20,168 +26,226 @@
     <!-- MAIN -->
     <main>
       <!-- LEFT PART  overflow hidden-->
-      <nav id="left-page"> 
+      <nav id="left-page">
         <div id="top-left-container">
-            <div id="img-logo" class="debug">
-                <a href="#"><img src="./img/logo.svg" alt="Logo" class="big-logo"></a>
-                <a href="#"><img src="./img/logo-small.svg" alt="Logo" class="small-logo"></a>
-            </div>
-            <div id="side-menu" class="debug">
-                <ul>
-                    <li><a href="#"><img src="./img/home.svg" alt="homepage button"> <span class="hidden-text">Home</span></a></li>
-                    <li><a href="#"><img src="./img/search.svg" alt="search button"> <span class="hidden-text">Cerca</span></a></li>
-                    <li><a href="#"><img src="./img/libreria.svg" alt="library button"> <span class="hidden-text">La tua libreria</span></a></li>
-                </ul>
-            </div>
-            <div id="playlist-container" class="debug">
-                <h3 class="hidden-text">PLAYLIST</h3>
-                <ul>
-                    <li>
-                        <i class="fa-solid fa-square-plus hidden-text"></i>
-                        <a href="#"><span class="hidden-text">Crea Playlist</span></a>
-                    </li>
-                    <li><span class="hidden-text">Nome Playlist</span></li>
-                    <li><span class="hidden-text">Nome Playlist</span></li>
-                    <li><span class="hidden-text">Nome Playlist</span></li>
-                    <li><span class="hidden-text">Nome Playlist</span></li>
-                    <li><span class="hidden-text">Nome Playlist</span></li>
-                    <li><span class="hidden-text">Nome Playlist</span></li>
-                    <li><span class="hidden-text">Nome Playlist</span></li>
-                </ul>
-            </div>
+          <div id="img-logo">
+            <a href="#"
+              ><img src="./img/logo.svg" alt="Logo" class="big-logo"
+            /></a>
+            <a href="#"
+              ><img src="./img/logo-small.svg" alt="Logo" class="small-logo"
+            /></a>
+          </div>
+          <div id="side-menu">
+            <ul>
+              <li>
+                <a href="#"
+                  ><img src="./img/home.svg" alt="homepage button" />
+                  <span class="hidden-text">Home</span></a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><img src="./img/search.svg" alt="search button" />
+                  <span class="hidden-text">Cerca</span></a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><img src="./img/libreria.svg" alt="library button" />
+                  <span class="hidden-text">La tua libreria</span></a
+                >
+              </li>
+            </ul>
+          </div>
+          <div id="playlist-container">
+            <h3 class="hidden-text">PLAYLIST</h3>
+            <ul>
+              <li>
+                <i class="fa-solid fa-square-plus hidden-text"></i>
+                <a href="#"><span class="hidden-text">Crea Playlist</span></a>
+              </li>
+              <li><span class="hidden-text">Nome Playlist</span></li>
+              <li><span class="hidden-text">Nome Playlist</span></li>
+              <li><span class="hidden-text">Nome Playlist</span></li>
+              <li><span class="hidden-text">Nome Playlist</span></li>
+              <li><span class="hidden-text">Nome Playlist</span></li>
+              <li><span class="hidden-text">Nome Playlist</span></li>
+              <li><span class="hidden-text">Nome Playlist</span></li>
+            </ul>
+          </div>
         </div>
-        <div id="bottom-sidepage" class="debug">
-            <div>
-                <a href="#"><img src="./img/download.svg" alt="profile icon">
-                <span class="hidden-text txtgrey">Installa app</span></a>
-            </div>
-            <hr>
-            <div>
-                <a href="#"><img src="./img/profile.svg" alt="user photo" class="bg-grey round">
-                <h3 class="hidden-text">John Doe</h3></a>
-            </div>
+        <div id="bottom-sidepage">
+          <div>
+            <a href="#"
+              ><img src="./img/download.svg" alt="profile icon" />
+              <span class="hidden-text txtgrey">Installa app</span></a
+            >
+          </div>
+          <hr />
+          <div>
+            <a href="#"
+              ><img
+                src="./img/profile.svg"
+                alt="user photo"
+                class="bg-grey round"
+              />
+              <h3 class="hidden-text">John Doe</h3></a
+            >
+          </div>
         </div>
       </nav>
 
       <!-- RIGHT PART -->
       <div id="right-page">
         <div id="top-rightbar">
-            <a href="#">EFFETTUA L'UPGRADE</a>
+          <a href="#">EFFETTUA L'UPGRADE</a>
         </div>
         <div id="main-rightpage">
-            <div id="main-topbar" class="debug">
-                <ul>
-                    <li><a href="#">IN EVIDENZA</a></li>
-                    <li><a href="#">PODCAST</a></li>
-                    <li><a href="#">CLASSIFICHE</a></li>
-                    <li><a href="#">GENERI E MOOD</a></li>
-                    <li><a href="#">NUOVE USCITE</a></li>
-                    <li><a href="#">SCOPRI</a></li>
-                </ul>
-            </div>
-            <div class="row debug">
-                <h2>Lorem ipsum</h2>
-                <ul class="catalog">
-                    <li>
-                        <div class="mockup-img"><img src="./img/stranger.jpeg" alt="" class="cover"></div>
-                        <h3>Lorem ipsum</h3>
-                        <div class="subtitle txtgrey">Lorem</div>
-                    </li>
-                    <li>
-                        <div class="mockup-img"><img src="./img/stranger.jpeg" alt="" class="cover"></div>
-                        <h3>Lorem ipsum</h3>
-                        <div class="subtitle txtgrey">Lorem</div>
-                    </li>
-                    <li>
-                        <div class="mockup-img"><img src="./img/stranger.jpeg" alt="" class="cover"></div>
-                        <h3>Lorem ipsum</h3>
-                        <div class="subtitle txtgrey">Lorem</div>
-                    </li>
-                    <li>
-                        <div class="mockup-img"><img src="./img/stranger.jpeg" alt="" class="cover"></div>
-                        <h3>Lorem ipsum</h3>
-                        <div class="subtitle txtgrey">Lorem</div>
-                    </li>
-                    <li>
-                        <div class="mockup-img"><img src="./img/stranger.jpeg" alt="" class="cover"></div>
-                        <h3>Lorem ipsum</h3>
-                        <div class="subtitle txtgrey">Lorem</div>
-                    </li>
-                    <li>
-                        <div class="mockup-img"><img src="./img/stranger.jpeg" alt="" class="cover"></div>
-                        <h3>Lorem ipsum</h3>
-                        <div class="subtitle txtgrey">Lorem</div>
-                    </li>
-                </ul>
-            </div>
-            <div class="row debug">
-                <h2>Lorem ipsum</h2>
-                <span>Lorem ipsum dolor sit amet consectetur adipisicing elit.</span>
-                <ul class="catalog">
-                    <li>
-                        <div class="mockup-img"><img src="./img/stranger.jpeg" alt="" class="cover"></div>
-                        <h3>Lorem ipsum</h3>
-                    </li>
-                    <li>
-                        <div class="mockup-img"><img src="./img/stranger.jpeg" alt="" class="cover"></div>
-                        <h3>Lorem ipsum</h3>
-                    </li>
-                </ul>
-            </div>
-            <div class="row debug">
-                <h2>Lorem ipsum</h2>
-                <span>Lorem ipsum dolor sit amet consectetur adipisicing elit.</span>
-                <ul class="catalog">
-                    <li>
-                        <div class="mockup-img"><img src="./img/stranger.jpeg" alt="" class="cover round"></div>
-                        <h3>Lorem ipsum</h3>
-                    </li>
-                    <li>
-                        <div class="mockup-img"><img src="./img/stranger.jpeg" alt="" class="cover round"></div>
-                        <h3>Lorem ipsum</h3>
-                    </li>
-                </ul>
-            </div>
+          <div id="main-topbar">
+            <ul>
+              <li><a href="#">IN EVIDENZA</a></li>
+              <li><a href="#">PODCAST</a></li>
+              <li><a href="#">CLASSIFICHE</a></li>
+              <li><a href="#">GENERI E MOOD</a></li>
+              <li><a href="#">NUOVE USCITE</a></li>
+              <li><a href="#">SCOPRI</a></li>
+            </ul>
+          </div>
+          <div class="row">
+            <h2>Recently played</h2>
+            <ul class="catalog">
+              <li>
+                <div class="mockup-img">
+                  <img src="./img/metal_lifting.jpg" alt="" class="cover" />
+                </div>
+                <h3>Heavy Metal</h3>
+                <div class="subtitle txtgrey">Subtitle</div>
+              </li>
+              <li>
+                <div class="mockup-img">
+                  <img src="./img/stranger.jpeg" alt="" class="cover" />
+                </div>
+                <div>
+                  <h3>
+                    Stranger Things, Vol. 1 (a Netflix Original Series
+                    Soundtrack)
+                  </h3>
+                  <div class="subtitle txtgrey">Kyle Dixon e Michael Stein</div>
+                </div>
+              </li>
+              <li>
+                <div class="mockup-img">
+                  <img src="./img/aquietplace.jpeg" alt="" class="cover" />
+                </div>
+                <h3>A quiet place</h3>
+                <div class="subtitle txtgrey">Subtitle</div>
+              </li>
+              <li>
+                <div class="mockup-img">
+                  <img src="./img/split.jpeg" alt="" class="cover" />
+                </div>
+                <h3>Split</h3>
+                <div class="subtitle txtgrey">Subtitle</div>
+              </li>
+              <li>
+                <div class="mockup-img">
+                  <img src="./img/cure.jpeg" alt="" class="cover" />
+                </div>
+                <h3>A cure for wellness</h3>
+                <div class="subtitle txtgrey">Subtitle</div>
+              </li>
+              <li>
+                <div class="mockup-img">
+                  <img src="./img/sinister.jpeg" alt="" class="cover" />
+                </div>
+                <h3>Sinister</h3>
+                <div class="subtitle txtgrey">Subtitle</div>
+              </li>
+            </ul>
+          </div>
+          <div class="row">
+            <h2>Creato per John Doe</h2>
+            <span>Più ascolti, più accurati saranno i suggerimenti.</span>
+            <ul class="catalog">
+              <li>
+                <div class="mockup-img">
+                  <img src="./img/radar.jpeg" alt="" class="cover" />
+                </div>
+                <h3>Release Radar</h3>
+              </li>
+              <li>
+                <div class="mockup-img">
+                  <img src="./img/mixdaily.jpeg" alt="" class="cover" />
+                </div>
+                <h3>Daily Mix 1</h3>
+              </li>
+            </ul>
+          </div>
+          <div class="row">
+            <h2>Artisti più popolari</h2>
+            <span>Più ascolti, più accurati saranno i suggerimenti.</span>
+            <ul class="catalog">
+              <li>
+                <div class="mockup-img">
+                  <img src="./img/youg.jpeg" alt="" class="cover round" />
+                </div>
+                <h3>Lana del Rey</h3>
+              </li>
+              <li>
+                <div class="mockup-img">
+                  <img src="./img/einaudi.jpeg" alt="" class="cover round" />
+                </div>
+                <h3>Ludovico Einaudi</h3>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </main>
 
     <!-- FOOTER -->
     <footer id="player">
-        <div id="song-info">
-            <img src="./img/stranger.jpeg" alt="" class="cover">
-            <div class="author-songname">
-                <h4>Sinister</h4>
-                <div class="flex-column txtgrey">
-                    <span>Brano</span>
-                    <span>nome</span>
-                </div>
-            </div>
-            <div class="flex-column">
-                <span><i class="fa-regular fa-heart"></i></span> 
-                <span><i class="fa-regular fa-folder"></i></span>
-            </div>
+      <div id="song-info">
+        <img src="./img/sinister.jpeg" alt="" class="cover" />
+        <div class="author-songname">
+          <h4>Sinister</h4>
+          <div class="flex-column txtgrey">
+            <span>Brano</span>
+            <span>nome</span>
+          </div>
         </div>
-        <div id="main-controls">
-            <div>
-                <i class="fa-solid fa-shuffle"></i>
-                <i class="fa-solid fa-backward-step"></i>
-                <i class="fa-regular fa-circle-play"></i>
-                <i class="fa-solid fa-forward-step"></i>
-                <i class="fa-solid fa-arrow-rotate-right"></i>
-            </div>
-            <div>0:25<div class="timeline song"></div>4:35</div>
+        <div class="flex-column">
+          <span><i class="fa-regular fa-heart"></i></span>
+          <span><i class="fa-regular fa-folder"></i></span>
         </div>
-        <div id="side-controls">
-            <div>
-                <i class="fa-solid fa-list"></i>
-                <i class="fa-solid fa-display"></i>
-            </div>
-            <div>
-                <i class="fa-solid fa-volume-high"></i>
-                <div class="timeline volume"></div>
-            </div>
+      </div>
+      <div id="main-controls">
+        <div>
+          <i class="fa-solid fa-shuffle"></i>
+          <i class="fa-solid fa-backward-step"></i>
+          <i class="fa-regular fa-circle-play"></i>
+          <i class="fa-solid fa-forward-step"></i>
+          <i class="fa-solid fa-arrow-rotate-right"></i>
         </div>
+        <div>
+          0:25
+          <div class="timeline song">
+            <div></div>
+          </div>
+          4:35
+        </div>
+      </div>
+      <div id="side-controls">
+        <div>
+          <i class="fa-solid fa-list"></i>
+          <i class="fa-solid fa-display"></i>
+        </div>
+        <div>
+          <i class="fa-solid fa-volume-high"></i>
+          <div class="timeline volume"></div>
+        </div>
+      </div>
     </footer>
   </body>
 </html>
