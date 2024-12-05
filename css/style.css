@@ -332,6 +332,19 @@ main {
   height: 100%;
   width: 30%;
   border-radius: 999px;
+  position: relative;
+}
+
+.timeline.song > div:hover:after {
+  content: "";
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  position: absolute;
+  right: -5px;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #ffffff;
 }
 
 .timeline.song > div:hover {
@@ -372,6 +385,19 @@ main {
   height: 100%;
   width: 15%;
   border-radius: 999px;
+  position: relative;
+}
+
+.timeline.volume > div:hover:after {
+  content: "";
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  position: absolute;
+  right: -5px;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #ffffff;
 }
 
 .timeline.volume > div:hover {
