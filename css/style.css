@@ -18,6 +18,14 @@ body {
   border: solid 1px #ffffff;
 }
 
+.brd-bottom-green {
+  border-bottom: solid 4px #bfff30;
+} 
+
+.brd-left-green {
+    border-left: solid 4px #bfff30;
+}
+
 .txtwhite {
     color: #ffffff;
 }
@@ -40,7 +48,7 @@ ul {
 }
 
 ul > li {
-  padding-top: 7px;
+  padding: 7px 0;
 }
 
 a {
@@ -123,6 +131,14 @@ main {
   padding-top: 15px;
 }
 
+#left-page a:hover {
+    color: #ffffff;
+}
+
+#bottom-sidepage a:hover {
+    color: #ffffff;
+}
+
 #side-menu img {
   max-width: 30px;
 }
@@ -143,11 +159,21 @@ main {
   align-items: center;
 }
 
+#playlist-container a {
+    display: flex;
+    align-items: center;
+}
+
+.fa-square-plus {
+    padding-right: 10px;
+}
+
 /* BOTTOM SIDEPAGE */
 #bottom-sidepage {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+  margin: 0 15px;
 }
 
 #bottom-sidepage img {
@@ -171,8 +197,7 @@ main {
 #top-rightbar {
   height: 115px;
   width: calc(100% - 250px);
-  opacity: 0.4;
-  background-color: #080b12;
+  background-color: rgba(8, 11, 18, 0.5);
   position: fixed;
   top: 0;
   right: 0;
@@ -180,13 +205,19 @@ main {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  padding-right: 20px;
+  /* padding-right: 20px; */
 }
 
 #top-rightbar > a {
   padding: 20px;
   border: solid 1px #ffffff;
   border-radius: 1000px;
+  margin-right: 40px;
+  color: #ffffff;
+}
+
+#top-rightbar > a:hover {
+    transform: scale(1.2);
 }
 
 #main-rightpage {
@@ -206,6 +237,10 @@ main {
 
 #main-topbar li {
   padding: 20px;
+}
+
+#main-topbar a:hover {
+    color: white;
 }
 
 .row {
@@ -276,12 +311,11 @@ main {
     background-color: #ffffff;
     height: 100%;
     width: 30%;
-    display: none;
     border-radius: 999px;
 }
 
-.timeline.song:hover > div {
-    display: block;
+.timeline.song > div:hover {
+    background-color: #bbf45a;
 }
 
 #side-controls {
@@ -317,12 +351,11 @@ main {
     background-color: #ffffff;
     height: 100%;
     width: 15%;
-    display: none;
     border-radius: 999px;
 }
 
-.timeline.volume:hover > div {
-    display: block;
+.timeline.volume > div:hover {
+    background-color: #bbf45a;
 }
 
 /* TABLET VERSION */
@@ -387,6 +420,10 @@ main {
 
   #side-menu li {
     padding-left: 12px;
+  }
+
+  #playlist-container a {
+    display: none;
   }
 
   #bottom-sidepage a {
