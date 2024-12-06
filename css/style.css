@@ -272,7 +272,7 @@ main {
 }
 
 .mockup-img i {
-  font-size: 50px;
+  font-size: 80px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -329,10 +329,6 @@ main {
   justify-content: center;
   gap: 15px;
   font-size: 1.5rem;
-}
-
-.fa-circle-play:hover {
-  transform: scale(1.5);
 }
 
 #main-controls > div:last-child {
