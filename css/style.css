@@ -331,6 +331,10 @@ main {
   font-size: 1.5rem;
 }
 
+#main-controls .fa-circle-play:hover {
+  transform: scale(1.3);
+}
+
 #main-controls > div:last-child {
   display: flex;
   justify-content: center;
